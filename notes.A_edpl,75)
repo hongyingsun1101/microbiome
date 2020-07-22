@@ -1,0 +1,17 @@
+aa=stats.scoreatpercentile(df.A_edpl,75),stats.scoreatpercentile(df.B_edpl,75),stats.scoreatpercentile(df.C_edpl,75),stats.scoreatpercentile(df.D_edpl,75),stats.scoreatpercentile(df.E_edpl,75)
+
+
+[stats.scoreatpercentile(df.A_edpl[df.A_edpl>0.01],75),
+stats.scoreatpercentile(df.B_edpl[df.B_edpl>0.01],75),
+stats.scoreatpercentile(df.C_edpl[df.C_edpl>0.01],75),
+stats.scoreatpercentile(df.D_edpl[df.D_edpl>0.01],75),
+stats.scoreatpercentile(df.E_edpl[df.E_edpl>0.01],75)]
+
+
+[stats.percentileofscore(df.A_adcl,0.001),stats.percentileofscore(df.B_adcl,0.001),stats.percentileofscore(df.C_adcl,0.001),stats.percentileofscore(df.D_adcl,0.001),stats.percentileofscore(df.E_adcl,0.001)]
+
+[df.A_adcl[df.A_adcl>0.001].median(),
+df.B_adcl[df.B_adcl>0.001].median(),
+df.C_adcl[df.C_adcl>0.001].median(),
+df.D_adcl[df.D_adcl>0.001].median(),
+df.E_adcl[df.E_adcl>0.001].median()]
