@@ -189,6 +189,16 @@ mindistl, shown as in Figure \ref{mindistl}
 	\caption{mindistl distribution}
 	\label{mindistl}
 \end{figure}
+\subsection{Response variable-score}
+Score is calculated at sequence level by compared the predicted taxonomy using pplacer and the known taxonomy in the mock dataset. Two standards are used: species and genus. For each standard, there are two criteria: accuracy and rank.  If the rank is off by 1, the penalty is 2 from species to genus, 4 from genus to family, 8 from family to order, 16 from order to class, 32 from class to phylum.  If the accuracy is off, the penalty is 32.
 
+\subsection{Scatterplot between score and pplacer stats at sequence level}
+The scatterplot between score and all 4 pplacer stats at sequence level for community 0 is shown as in Figure \ref{ReferenceA-community0-scatter}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth, keepaspectratio]{ReferenceA-community0-scatter.png}\\
+	\caption{Scatterplot between score and pplacer stats using reference A for community 0}
+	\label{ReferenceA-community0-scatter}
+\end{figure}
 
 \end{document}
